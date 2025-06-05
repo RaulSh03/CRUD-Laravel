@@ -12,11 +12,6 @@ class Libro extends Model
     protected $fillable = ['titulo', 'descripcion', 'autor']; // ✅
 
 
-    public function generate()
-    {
-        Libro::factory()->count(10)->create();
-
-    }
     public function vaciar()
     {
         Libro::truncate();
